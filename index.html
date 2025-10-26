@@ -1,63 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم جامعة منيسوتا</title>
 
-</head>
-<body>
-  
-  <p>STUDENT CV</p>
+    <!-- 🔗 رابط Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
 
-<style> 
-P {
-    color: rgb(183, 37, 183);
-    background-color: rgb(255, 255, 255);
-}
-</style>
+    <!-- 🔗 رابط ملف التنسيق الخاص بك -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
 
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+  <body>
+
+    <!-- 🔹 شريط التنقل (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="#">مطعم جامعة منيسوتا</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">القائمة</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
+    </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <!-- 🔹 قسم الترحيب -->
+    <header class="bg-warning text-dark text-center py-5">
+      <div class="container">
+        <h1 class="fw-bold">أهلاً بكم في مطعم جامعة منيسوتا 🍔☕</h1>
+        <p class="lead">نكهات لذيذة... وجو جامعي مميز!</p>
+      </div>
+    </header>
 
-</body>
+    <!-- 🔹 قسم القائمة -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4 text-dark">قائمة الأطعمة</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/images/burger.jpg" class="card-img-top" alt="برجر">
+              <div class="card-body">
+                <h5 class="card-title">برجر الجامعي</h5>
+                <p class="card-text">برجر لحم مع جبن ذائب وصوص خاص.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/images/pizza.jpg" class="card-img-top" alt="بيتزا">
+              <div class="card-body">
+                <h5 class="card-title">بيتزا الجامعة</h5>
+                <p class="card-text">بيتزا بطعم إيطالي أصيل ومكونات طازجة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/images/coffee.jpg" class="card-img-top" alt="قهوة">
+              <div class="card-body">
+                <h5 class="card-title">قهوة المساء</h5>
+                <p class="card-text">قهوة محمصة طازجة لأجواء الدراسة.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 قسم من نحن -->
+    <section id="about" class="py-5 bg-dark text-light text-center">
+      <div class="container">
+        <h2>من نحن</h2>
+        <p class="lead">مطعم جامعة منيسوتا يقدم أشهى الأكلات والمشروبات بأسعار طلابية وجودة عالية.</p>
+      </div>
+    </section>
+
+    <!-- 🔹 قسم التواصل -->
+    <section id="contact" class="py-5 bg-warning text-dark text-center">
+      <div class="container">
+        <h2>تواصل معنا</h2>
+        <p>📍 الموقع: داخل جامعة منيسوتا</p>
+        <p>📞 الهاتف: 0501234567</p>
+        <p>📧 البريد: info@umn-restaurant.com</p>
+      </div>
+    </section>
+
+    <!-- 🔹 تذييل -->
+    <footer class="bg-dark text-light text-center py-3">
+      <p>© 2025 مطعم جامعة منيسوتا - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <!-- 🔗 سكربت Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
